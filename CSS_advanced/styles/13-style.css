@@ -1,6 +1,5 @@
-html{
-	scroll-behavior: smooth;
-}
+
+
 	:root {
 	--color-primary: #d73953;
 	--color-black: #090909;
@@ -32,15 +31,11 @@ html{
 
   	html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
-  	body {
+  	body, a:link {
 	color: var(--text-color);
-	font-family: var(--font-family-base);
-	font-size: var(--font-size-medium);
-	font-weight: var(--font-weight-regular);
-
-	line-height: var(--line-height-base);
 }
 
   	h1, h2, h3, h4, h5, h6 {
@@ -48,10 +43,10 @@ html{
 	font-weight: var(--font-weight-bold);
 }
 
-	a {
-	color: var(--text-color);
+	a:link {
 	text-decoration: none;
 }
+
 	a:visited {
 	font-style: italic;
 }
@@ -60,7 +55,12 @@ html{
 }
 	a:active {
 	background-color: var(--color-light-grey);
-}
+	}
+
+	.visually_hidden {
+		display: none;
+	}
+	
 	.section-header {
 	text-align: var(--section-header-align);
 
@@ -74,14 +74,12 @@ html{
 }
 
 	.section-tagline {
-	color: var(--color-primary);
 
 	font-family: var(--font-family-title);
 	text-transform: var(--section-tagline-transform);
 	font-weight: var(--font-weight-bold);
 
 }
-
 	.card-category {
 	color: var(--color-primary);
 }
