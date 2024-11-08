@@ -222,11 +222,9 @@ html{
 }
 
   	body {
-	color: var(--text-color);
 	font-family: var(--font-family-base);
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-regular);
-
 	line-height: var(--line-height-base);
 }
 
@@ -235,18 +233,28 @@ html{
 	font-weight: var(--font-weight-bold);
 }
 
-	a {
+	body, a:link {
 	color: var(--text-color);
+}
+
+	a:link {
 	text-decoration: none;
 }
+
 	a:visited {
 	font-style: italic;
 }
+
 	a:hover {
 	text-decoration: underline;
 }
+
 	a:active {
 	background-color: var(--color-light-grey);
+}
+
+	.visually_hidden {
+	display: none;
 }
 	.section-header {
 	text-align: var(--section-header-align);
