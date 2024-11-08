@@ -172,9 +172,7 @@ html {
 	  display:none
   }
 
-  *, *::before, *::after {
-	box-sizing: border-box;
-}
+
 
 
 html{
@@ -216,6 +214,9 @@ html{
 	--footer-padding :5rem 0 1rem;
 }
 
+  *, *::before, *::after {
+	box-sizing: border-box;
+}
   	html {
 	font-size: 62.5%;
 }
